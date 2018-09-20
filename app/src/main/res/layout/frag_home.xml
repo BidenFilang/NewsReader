@@ -1,0 +1,72 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/LL_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/head_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_news2"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="5dp"/>
+
+        <ImageView
+            android:id="@+id/head_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/img_title"
+            />
+
+        <Button
+            android:id="@+id/inputButton"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="    你想知道什么                     |搜索"
+            android:textSize="12sp"
+            android:gravity="left|center"
+            android:background="@drawable/shape"
+            />
+
+        <ImageView
+            android:id="@+id/head_exp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/head_exp"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="12dp"/>
+    </LinearLayout>
+    //顶部导航栏
+    <android.support.design.widget.TabLayout
+            android:id="@+id/tab_essence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            app:tabBackground="@drawable/bottomborderline"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/color_red"
+            >
+
+    </android.support.design.widget.TabLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_essence"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </android.support.v4.view.ViewPager>
+
+</LinearLayout>
